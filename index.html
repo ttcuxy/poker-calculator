@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poker Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Poker Calculator</h1>
+
+  <section>
+    <h2>Pot Odds</h2>
+    <label>Bank size: <input type="number" id="pot" /></label><br>
+    <label>Opponent bet: <input type="number" id="bet" /></label><br>
+    <button onclick="calculatePotOdds()">Calculate</button>
+    <p id="potOddsResult"></p>
+  </section>
+
+  <section>
+    <h2>SPR (Stack to Pot Ratio)</h2>
+    <label>Effective Stack: <input type="number" id="stack" /></label><br>
+    <label>Pot Size: <input type="number" id="sprPot" /></label><br>
+    <button onclick="calculateSPR()">Calculate</button>
+    <p id="sprResult"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
